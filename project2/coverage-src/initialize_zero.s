@@ -23,6 +23,7 @@ initialize_zero:
     sw ra 4(sp)
 
     slli a0 a0 2 # get how many bytes to allocate
+ebreak
     jal malloc
     beqz a0 error_malloc # exit if malloc failed
 
