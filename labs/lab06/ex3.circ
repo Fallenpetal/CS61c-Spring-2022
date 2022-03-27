@@ -85,7 +85,7 @@
       <a name="valign" val="base"/>
     </tool>
   </lib>
-  <main name="pipelined"/>
+  <main name="non_pipelined"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -132,9 +132,9 @@
       <a name="appearance" val="logisim_evolution"/>
     </tool>
   </toolbar>
-  <circuit name="pipelined">
+  <circuit name="non_pipelined">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="pipelined"/>
+    <a name="circuit" val="non_pipelined"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="circuitvhdlpath" val=""/>
     <a name="clabel" val=""/>
@@ -157,7 +157,7 @@
       <a name="locked" val="true"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="0" loc="(810,130)" name="Pin">
+    <comp lib="0" loc="(560,130)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="label" val="out1"/>
@@ -165,5 +165,27 @@
       <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
+    <comp lib="3" loc="(290,120)" name="Multiplier"/>
+    <comp lib="3" loc="(380,130)" name="Adder"/>
+    <comp lib="4" loc="(420,100)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <wire from="(170,150)" to="(190,150)"/>
+    <wire from="(170,210)" to="(410,210)"/>
+    <wire from="(170,90)" to="(190,90)"/>
+    <wire from="(190,110)" to="(250,110)"/>
+    <wire from="(190,130)" to="(190,150)"/>
+    <wire from="(190,130)" to="(250,130)"/>
+    <wire from="(190,90)" to="(190,110)"/>
+    <wire from="(290,120)" to="(340,120)"/>
+    <wire from="(330,140)" to="(330,230)"/>
+    <wire from="(330,140)" to="(340,140)"/>
+    <wire from="(330,230)" to="(520,230)"/>
+    <wire from="(380,130)" to="(420,130)"/>
+    <wire from="(410,170)" to="(410,210)"/>
+    <wire from="(410,170)" to="(420,170)"/>
+    <wire from="(480,130)" to="(520,130)"/>
+    <wire from="(520,130)" to="(520,230)"/>
+    <wire from="(520,130)" to="(560,130)"/>
   </circuit>
 </project>
